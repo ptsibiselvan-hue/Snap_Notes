@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📌 SnapNote</title>
+  <link rel="stylesheet" href="SnapNote.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div id="logo">
+    <img src="img\logo.svg" alt="">
+    <p>SnapNote</p>
+    </div>
+    <h1>Welcome to SnapNote 📌</h1>
+    <p>Your quick and easy note-taking app!</p>
+  </div>
+ 
+  <div class="taskcontainer">
+
+  <div class="content">
+        <h1>Title</h1>
+        <h4>08/01/2005</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium odit consectetur autem mollitia a perferendis nemo cum, optio veritatis necessitatibus voluptates perspiciatis ducimus corrupti quia nam dolorem blanditiis, iure sapiente ipsa minima maxime. Labore, nostrum aliquam ex maiores repellat modi aut? Deserunt sed, esse earum repellendus officia error dicta vero?</p>
+        <button onclick="del(event)">Delete</button>
+  </div>
+
+
+  </div>
+
+  <div class="overlay"></div>
+  <div class="popup">
+     <h1>📝 Add Task</h1>
+     <form >
+        <input type="text" placeholder="Enter the Task" id="task-name-input">
+        <input type="date" placeholder="Enter the date" id="task-date-input">
+        <textarea name="Description" id="task-description-input" placeholder="Short Description"></textarea>
+        <button id="add-task">Add</button>
+        <button id="delete-task">Cancel</button>
+     </form>
+  </div>
+
+  <button id="add-new-task"> + </button>
+    
+<script src="SnapNote.js"></script>   
+
+</body>
+</html> 
